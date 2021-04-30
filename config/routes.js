@@ -36,27 +36,27 @@ export default [
               {
                 path: '/border',
                 name: 'border',
-                icon: 'crown',
+                icon: 'unordered-list',
                 routes: [
                   {
-                    path: '/border/border-shadow',
-                    name: 'BorderShadow',  
-                    component: './chart1/BorderShadow',                    
+                    path: '/border/inner-circular-angle',
+                    name: 'inner-circular-angle',  
+                    component: './Border/InnerCircularAngle/index',                    
                   },
                 ]
               },
-              {
-                path: '/background',
-                name: 'background',
-                icon: 'crown',
-                routes: [
-                  {
-                    path: '/background/border-shadow',
-                    name: 'BorderShadow',  
-                    component: './chart1/BorderShadow',                    
-                  },
-                ]
-              },
+              // {
+              //   path: '/background',
+              //   name: 'background',
+              //   icon: 'unordered-list',
+              //   routes: [
+              //     {
+              //       path: '/background/border-shadow',
+              //       name: 'BorderShadow',  
+              //       component: '',                    
+              //     },
+              //   ]
+              // },
               // {
               //   path: '/admin',
               //   name: 'admin',
