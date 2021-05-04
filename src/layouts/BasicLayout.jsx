@@ -37,7 +37,7 @@ const menuDataRender = (menuList) =>
 
 const defaultFooterDom = (
   <DefaultFooter
-    copyright={`${new Date().getFullYear()} Supported by CSS Secrets which is published by Lea Verou & Founded with Antd Pro`}
+    copyright={`${new Date().getFullYear()} Supported by CSS Secrets which is published by Lea Verou & Set up with Antd Pro`}
     links={[
       {
         key: 'lolipopluxury',
