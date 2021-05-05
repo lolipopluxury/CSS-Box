@@ -33,7 +33,7 @@ export default () => {
           </Row>
           <Row>
             <Col span={6}>
-              <div className={styles.target}></div>
+              <div className={styles.figure1}></div>
             </Col>
             <Col span={12}>
               <Paragraph>
