@@ -6,7 +6,7 @@ import settingDrawer from './en-US/settingDrawer';
 import settings from './en-US/settings';
 import pages from './en-US/pages';
 
-import context from './en-US/context'
+import context from './en-US/context';
 
 export default {
   'navBar.lang': 'Languages',
@@ -16,6 +16,7 @@ export default {
   'app.preview.down.block': 'Download this page to your local project',
   'app.welcome.link.fetch-blocks': 'Get all block',
   'app.welcome.link.block-list': 'Quickly build standard, pages based on `block` development',
+  'component.collapse.tag': 'Click here to view',
   ...globalHeader,
   ...menu,
   ...settingDrawer,
