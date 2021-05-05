@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageContainer } from '@ant-design/pro-layout';
-import { Card, Row, Col, Divider, Typography, Collapse } from 'antd';
+import { Card, Row, Col, Divider, Typography, Collapse, Space } from 'antd';
 import { FormattedMessage } from 'umi';
 import styles from './index.less';
 import SyntaxHighlighter from 'react-syntax-highlighter';
@@ -21,33 +21,38 @@ export default () => {
         <Divider orientation="left" className={styles.keywords}>
           Keywords: border-radius & box-shadow & outline
         </Divider>
-        <Row>
-          <Col span={18}>
-            <Paragraph>
-              <blockquote>
-                <FormattedMessage id="context.border.inner-circular-border.paragraph.first" />
-              </blockquote>
-            </Paragraph>
-          </Col>
-        </Row>
-        <Row>
-          <Col span={16}>
-            <Collapse ghost>
-              <Panel header={collapseTag}>
-                <SyntaxHighlighter
-                  language="css"
-                  style={stackoverflowLight}
-                  className={styles.highlighter}
-                >
-                  {Coding.cssInnerCircular}
-                </SyntaxHighlighter>
-              </Panel>
-            </Collapse>
-          </Col>
-          <Col span={8}>
-            <div className={styles.target}>I have a nice inner</div>
-          </Col>
-        </Row>
+        <Space direction="vertical" size="middle">
+          <Row>
+            <Col span={18}>
+              <Paragraph>
+                <blockquote>
+                  <FormattedMessage id="context.border.inner-circular-border.paragraph.first" />
+                </blockquote>
+              </Paragraph>
+            </Col>
+          </Row>
+          <Row>
+            <Col span={6}>
+              <div className={styles.target}></div>
+            </Col>
+            <Col span={12}>
+              <Paragraph>
+                <FormattedMessage id="context.border.inner-circular-border.paragraph.second" />
+              </Paragraph>
+              <Collapse ghost>
+                <Panel header={collapseTag}>
+                  <SyntaxHighlighter
+                    language="css"
+                    style={stackoverflowLight}
+                    className={styles.highlighter}
+                  >
+                    {Coding.cssInnerCircular}
+                  </SyntaxHighlighter>
+                </Panel>
+              </Collapse>
+            </Col>
+          </Row>
+        </Space>
       </Card>
     </PageContainer>
   );
