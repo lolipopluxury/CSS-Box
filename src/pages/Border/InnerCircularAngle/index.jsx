@@ -39,6 +39,9 @@ export default () => {
               <Paragraph>
                 <FormattedMessage id="context.border.inner-circular-border.paragraph.second" />
               </Paragraph>
+              <Paragraph>
+                <FormattedMessage id="context.border.inner-circular-border.paragraph.third" />
+              </Paragraph>
               <Collapse ghost>
                 <Panel header={collapseTag}>
                   <SyntaxHighlighter
