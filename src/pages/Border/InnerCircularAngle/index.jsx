@@ -21,8 +21,9 @@ export default () => {
         <Divider orientation="left" className={styles.keywords}>
           Keywords: border-radius & box-shadow & outline
         </Divider>
-        <Space direction="vertical" size="middle">
+        <Space direction="vertical" size="small">
           <Row>
+            <Col span={1} />
             <Col span={18}>
               <Paragraph>
                 <blockquote>
@@ -31,7 +32,8 @@ export default () => {
               </Paragraph>
             </Col>
           </Row>
-          <Row>
+          <Row align="middle">
+            <Col span={1} />
             <Col span={6}>
               <div className={styles.figure1}></div>
             </Col>
@@ -42,17 +44,43 @@ export default () => {
               <Paragraph>
                 <FormattedMessage id="context.border.inner-circular-border.paragraph.third" />
               </Paragraph>
+              <Paragraph>
+                <FormattedMessage id="context.border.inner-circular-border.paragraph.fourth" />
+              </Paragraph>
+            </Col>
+          </Row>
+          <Row>
+            <Col span={7} />
+            <Col>
               <Collapse ghost>
                 <Panel header={collapseTag}>
                   <SyntaxHighlighter
                     language="css"
                     style={stackoverflowLight}
-                    className={styles.highlighter}
+                    className={styles.highlighterHidden}
                   >
-                    {Coding.cssInnerCircular}
+                    {Coding.figure}
                   </SyntaxHighlighter>
                 </Panel>
               </Collapse>
+            </Col>
+          </Row>
+          <Row align="middle">
+            <Col span={1} />
+            <Col span={12}>
+              <Paragraph>
+                <FormattedMessage id="context.border.inner-circular-border.paragraph.fifth" />
+              </Paragraph>
+              <SyntaxHighlighter
+                language="css"
+                style={stackoverflowLight}
+                className={styles.highlighterTarget}
+              >
+                {Coding.cssInnerCircular}
+              </SyntaxHighlighter>
+            </Col>
+            <Col span={6}>
+              <div className={styles.target}></div>
             </Col>
           </Row>
         </Space>
