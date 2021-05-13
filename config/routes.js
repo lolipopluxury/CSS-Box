@@ -40,23 +40,23 @@ export default [
                 routes: [
                   {
                     path: '/border/inner-circular-angle',
-                    name: 'inner-circular-angle',  
-                    component: './Border/InnerCircularAngle/index',                    
+                    name: 'inner-circular-angle',
+                    component: './Border/InnerCircularAngle/index',
                   },
-                ]
+                ],
               },
-              // {
-              //   path: '/background',
-              //   name: 'background',
-              //   icon: 'unordered-list',
-              //   routes: [
-              //     {
-              //       path: '/background/border-shadow',
-              //       name: 'BorderShadow',  
-              //       component: '',                    
-              //     },
-              //   ]
-              // },
+              {
+                path: '/background',
+                name: 'background',
+                icon: 'unordered-list',
+                routes: [
+                  {
+                    path: '/background/texture',
+                    name: 'texture',
+                    component: './Background/Texture/index',
+                  },
+                ],
+              },
               // {
               //   path: '/admin',
               //   name: 'admin',

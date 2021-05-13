@@ -6,7 +6,8 @@ import settingDrawer from './en-US/settingDrawer';
 import settings from './en-US/settings';
 import pages from './en-US/pages';
 
-import context from './en-US/context';
+import innerCircular from './en-US/context/border/innerCircular';
+import Texture from './en-US/context/background/Texture';
 
 export default {
   'navBar.lang': 'Languages',
@@ -24,6 +25,6 @@ export default {
   ...pwa,
   ...component,
   ...pages,
-
-  ...context,
+  ...innerCircular,
+  ...Texture,
 };

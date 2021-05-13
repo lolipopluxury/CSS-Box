@@ -2,6 +2,8 @@ export default {
   'menu.welcome': '欢迎',
   'menu.border': '边框',
   'menu.border.inner-circular-angle': '边框内圆角',
+  'menu.background': '背景',
+  'menu.background.texture': '纹理背景',
   'menu.more-blocks': '更多区块',
   'menu.home': '首页',
   'menu.admin': '管理页',

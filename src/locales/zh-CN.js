@@ -6,7 +6,8 @@ import settingDrawer from './zh-CN/settingDrawer';
 import settings from './zh-CN/settings';
 import pages from './zh-CN/pages';
 
-import context from './zh-CN/context';
+import innerCircular from './zh-CN/context/border/innerCircular';
+import Texture from './zh-CN/context/background/Texture';
 
 export default {
   'navBar.lang': '语言',
@@ -24,6 +25,6 @@ export default {
   ...settings,
   ...pwa,
   ...component,
-
-  ...context,
+  ...innerCircular,
+  ...Texture,
 };

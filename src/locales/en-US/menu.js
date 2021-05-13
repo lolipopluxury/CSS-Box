@@ -2,6 +2,8 @@ export default {
   'menu.welcome': 'Welcome',
   'menu.border': 'Border',
   'menu.border.inner-circular-angle': 'Inner Circular Angle',
+  'menu.background': 'Background',
+  'menu.background.texture': 'Texture',
   'menu.more-blocks': 'More Blocks',
   'menu.home': 'Home',
   'menu.admin': 'Admin',
